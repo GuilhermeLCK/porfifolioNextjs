@@ -16,34 +16,13 @@ export default function Home() {
   return (
     <>
       <Header></Header>
-      <div data-aos="fade-up-left">
-        <IamMe></IamMe>
-      </div>
-      <div data-aos="fade-up-right">
-        <About></About>
-      </div>
+
+      <IamMe></IamMe>
+
+      <About></About>
+
       <Skills></Skills>
       <Project></Project>
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
-      <br /> <br />
     </>
   );
 }

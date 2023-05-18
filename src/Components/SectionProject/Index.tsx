@@ -33,7 +33,7 @@ export default function Project() {
                   O projeto consiste em um formulário dinâmico que se adapta às
                   respostas das perguntas, fornecendo um direcionamento mais
                   preciso para atender às necessidades no momento. Atualmente, a
-                  fase de desenvolvimento do backend está em andamento
+                  fase de desenvolvimento do backend está em andamento.
                 </p>
               </div>
               <div className={style.tech}>
