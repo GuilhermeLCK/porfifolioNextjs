@@ -39,37 +39,16 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // Header mobile
-
-  const [active, setActive] = useState(false);
-
-  const ToggleMode = () => {
-    setActive(!active);
-  };
 
   return (
     <>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-        <div
-          className={`${active ? styles.iconActive : styles.icon}`}
-          onClick={ToggleMode}
-        >
-          <div className={styles.hamburguer}></div>
-        </div>
-        <div className={`${active ? styles.menuOpen : styles.menuClose}`}>
-          <button className={styles.button} onClick={() => setActive(false)}>
-            <a href="#sobre">Sobre</a>
-          </button>
-          <button className={styles.button} onClick={() => setActive(false)}>
-            Conhecimento
-          </button>
-          <button className={styles.button} onClick={() => setActive(false)}>
-            Projetos
-          </button>
-          <button className={styles.button} onClick={() => setActive(false)}>
-            Contato
-          </button>
-        </div>
+        <button className={styles.button}>
+          <a href="#sobre">Sobre</a>
+        </button>
+        <button className={styles.button}>Conhecimento</button>
+        <button className={styles.button}>Projetos</button>
+        <button className={styles.button}>Contato</button>
       </header>
       <div
         className={styles.progressBar}

@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import github from "../../Img/github.svg";
 import linkedin from "../../Img/Linkedin.png";
 import insta from "../../Img/Insta.svg";
+import pdf from "../../Img/icons8-pdf-50.png";
 import Image from "next/image";
 
 export default function IamMe() {
@@ -40,6 +41,9 @@ export default function IamMe() {
           </a>
           <a href="https://www.instagram.com/guilherme.lcs/" target="_blank">
             <Image src={insta} alt="Logo-Insta" className={styles.img}></Image>
+          </a>
+          <a href="#" target="_blank">
+            <Image src={pdf} alt="Logo-Insta" className={styles.img}></Image>
           </a>
         </div>
       </section>
