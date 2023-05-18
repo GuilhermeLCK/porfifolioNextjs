@@ -13,6 +13,7 @@
 /* Adicionando rolagem suave aos links */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

@@ -2,6 +2,7 @@ import Header from "@/Components/Header/Index";
 import About from "@/Components/SectionAbout/Index";
 import IamMe from "@/Components/SectionIamMe/Index";
 import Skills from "@/Components/SectionSkills/Index";
+import Project from "@/Components/SectionProject/Index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -22,17 +23,25 @@ export default function Home() {
         <About></About>
       </div>
       <Skills></Skills>
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+      <Project></Project>
       <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
+      <br /> <br />
       <br /> <br />
       <br /> <br />
     </>
