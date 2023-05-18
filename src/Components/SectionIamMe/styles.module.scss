@@ -1,0 +1,90 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 81px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  .ola {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .redes {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+    .img {
+      width: 35px;
+      height: 40px;
+      margin: 0px 25px 20px 0px;
+      object-fit: cover;
+      transition: transform 0.5s, filter 0.5s; /* Adicionando transições suaves */
+    }
+
+    .img:hover {
+      filter: hue-rotate(180deg); /* Altera a cor para azul */
+      transform: rotate(360deg) scale(1.1); /* Gira 360 graus e aumenta em 10% */
+    }
+
+    .img:hover ~ .img {
+      transform: scale(0.95); /* Diminui em 5% as outras imagens */
+    }
+  }
+
+  h1 {
+    margin-top: 40px;
+    color: #ffff;
+    font-size: 35px;
+    font-family: "Poppins";
+    font-weight: bold;
+    span {
+      font-size: 30px;
+      color: #888888;
+    }
+    .name {
+      color: #ff6464;
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    height: 200px;
+
+    .redes {
+      margin-bottom: 40px;
+      .img {
+        width: 25px;
+        height: 25px;
+        margin: 5px 15px 0px 0px;
+      }
+    }
+
+    h1 {
+      margin: 0;
+      color: #ffff;
+      font-size: 22px;
+      font-family: "Poppins";
+      font-weight: bold;
+      span {
+        font-size: 20px;
+        color: #888888;
+      }
+      .name {
+        font-size: 26px;
+      }
+    }
+  }
+}
