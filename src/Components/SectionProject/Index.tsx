@@ -25,11 +25,11 @@ export default function Project() {
   return (
     <>
       <section className={style.section} id="projetos">
-        <div className={style.h1} data-aos="fade-right">
+        <div className={style.h1}>
           <h1> Projetos</h1>
         </div>
         <div className={style.container}>
-          <div className={style.containerLeft} data-aos="fade-left">
+          <div className={style.containerLeft} data-aos="zoom-in-up">
             <div className={style.containerImagem}>
               <a href="https://typeform-rei.vercel.app/" target="_blank">
                 <Image src={Rei} alt="Rei"></Image>
@@ -65,7 +65,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className={style.containerRigth} data-aos="fade-right">
+          <div className={style.containerRigth} data-aos="zoom-in-up">
             <div className={style.containerImagem}>
               <a
                 href="https://personal-trainer-app-iota.vercel.app/"
@@ -109,7 +109,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div className={style.containerLeft} data-aos="fade-left">
+          <div className={style.containerLeft} data-aos="zoom-in-up">
             <div className={style.containerImagem}>
               <a href="https://app-cep-tan.vercel.app/" target="_blank">
                 <Image src={Cep} alt="Cep"></Image>
@@ -146,7 +146,7 @@ export default function Project() {
             </div>
           </div>
 
-          <div className={style.containerRigth} data-aos="fade-right">
+          <div className={style.containerRigth} data-aos="zoom-in-up">
             <div className={style.containerImagem}>
               <a
                 href="https://guilhermelck.github.io/MeuPortf-lio/"

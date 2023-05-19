@@ -19,8 +19,8 @@ export default function SkillMe() {
   }, []);
   return (
     <>
-      <section id="conhecimento" data-aos="zoom-out-left">
-        <div className={styles.container}>
+      <section id="conhecimento">
+        <div className={styles.container} data-aos="zoom-in">
           <div className={styles.containerH2}>
             <h1>Habilidades</h1>
           </div>
