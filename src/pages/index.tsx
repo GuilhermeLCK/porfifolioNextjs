@@ -16,7 +16,11 @@ export default function Home() {
   return (
     <>
       <Header></Header>
-      <div data-aos="fade-donw" data-aos-duration="1000">
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <IamMe></IamMe>
 
         <About></About>
