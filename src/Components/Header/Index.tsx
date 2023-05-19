@@ -55,7 +55,7 @@ export default function Header() {
           <a href="#projetos">Projetos</a>
         </button>
         <button className={styles.button}>
-          <a href="#contatato">Contatos</a>
+          <a href="#contato">Contatos</a>
         </button>
       </header>
       <div
