@@ -15,14 +15,14 @@ export default function About() {
   return (
     <>
       <div className={styles.about} id="sobre">
-        <div className={styles.containerImagem} data-aos="fade-right">
+        <div className={styles.containerImagem}>
           <Image
             className={styles.banner}
             src={Banner}
             alt="bannerLogo"
           ></Image>{" "}
         </div>
-        <div className={styles.containerAbout} data-aos="fade-left">
+        <div className={styles.containerAbout}>
           <h1>Minha história</h1>
           <p>
             Desde setembro de 2022, iniciei uma nova trajetória profissional na

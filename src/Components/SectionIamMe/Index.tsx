@@ -25,7 +25,7 @@ export default function IamMe() {
 
   return (
     <>
-      <section className={styles.container} data-aos="fade-down">
+      <section className={styles.container}>
         <div className={styles.ola}>
           <h1>
             Óla, sou o <span className={styles.name}>Guilherme</span> <br />
