@@ -7,11 +7,19 @@ import css from "../../Img/css.svg";
 import html from "../../Img/html.svg";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function SkillMe() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
   return (
     <>
-      <section>
+      <section id="conhecimento" data-aos="zoom-out-left">
         <div className={styles.container}>
           <div className={styles.containerH2}>
             <h1>Habilidades</h1>

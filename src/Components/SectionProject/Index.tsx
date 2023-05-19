@@ -11,16 +11,25 @@ import Figa from "../../Img/figmaBranco.png";
 import Sass from "../../Img/sassBranco.png";
 import Git from "../../Img/github.svg";
 import Site from "../../Img/site.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Project() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
+
   return (
     <>
-      <section className={style.section}>
-        <div className={style.h1}>
+      <section className={style.section} id="projetos">
+        <div className={style.h1} data-aos="fade-right">
           <h1> Projetos</h1>
         </div>
         <div className={style.container}>
-          <div className={style.containerLeft}>
+          <div className={style.containerLeft} data-aos="fade-left">
             <div className={style.containerImagem}>
               <a href="https://typeform-rei.vercel.app/" target="_blank">
                 <Image src={Rei} alt="Rei"></Image>
@@ -29,35 +38,34 @@ export default function Project() {
             <div className={style.containerDescription}>
               <div className={style.containerTitle}>
                 <h1>Form O Rei Dos Sites</h1>
-                <p>
-                  O projeto consiste em um formulário dinâmico que se adapta às
-                  respostas das perguntas, fornecendo um direcionamento mais
-                  preciso para atender às necessidades no momento. Atualmente, a
-                  fase de desenvolvimento do backend está em andamento.
-                </p>
+                <h2>Tecnologias Usadas</h2>
               </div>
               <div className={style.tech}>
                 <Image src={React} alt="Logo-Icon"></Image>
                 <Image src={Js} alt="Logo-Icon"></Image>
-
                 <Image src={Sass} alt="Logo-Icon"></Image>
               </div>
               <div className={style.linkSite}>
-                <a
-                  href="https://github.com/GuilhermeLCK/typeformRei"
-                  target="_blank"
-                >
-                  {" "}
-                  <Image src={Git} alt="git"></Image>
-                </a>
-                <a href="https://typeform-rei.vercel.app/" target="_blank">
-                  {" "}
-                  <Image src={Site} alt="Site"></Image>
-                </a>
+                <button>
+                  Código
+                  <a
+                    href="https://github.com/GuilhermeLCK/typeformRei"
+                    target="_blank"
+                  >
+                    <Image src={Git} alt="git"></Image>
+                  </a>
+                </button>
+
+                <button>
+                  Live Demo
+                  <a href="https://typeform-rei.vercel.app/" target="_blank">
+                    <Image src={Site} alt="Site"></Image>
+                  </a>
+                </button>
               </div>
             </div>
           </div>
-          <div className={style.containerRigth}>
+          <div className={style.containerRigth} data-aos="fade-right">
             <div className={style.containerImagem}>
               <a
                 href="https://personal-trainer-app-iota.vercel.app/"
@@ -69,10 +77,7 @@ export default function Project() {
             <div className={style.containerDescription}>
               <div className={style.containerTitle}>
                 <h1>André Personal</h1>
-                <p>
-                  Landing page feita para um personal, criada desde o seu layout
-                  até o seu desenvolvimento, com o objetivo de captar clientes.
-                </p>
+                <h2>Tecnologias Usadas</h2>
               </div>
               <div className={style.tech}>
                 <Image src={React} alt="Icon-Logo"></Image>
@@ -80,24 +85,31 @@ export default function Project() {
                 <Image src={Sass} alt="Icon-Logo"></Image>
               </div>
               <div className={style.linkSite}>
-                <a
-                  href="https://github.com/GuilhermeLCK/personalTrainerApp"
-                  target="_blank"
-                >
+                <button>
+                  Código
+                  <a
+                    href="https://github.com/GuilhermeLCK/personalTrainerApp"
+                    target="_blank"
+                  >
+                    {" "}
+                    <Image src={Git} alt="git"></Image>
+                  </a>
+                </button>
+                <button>
                   {" "}
-                  <Image src={Git} alt="git"></Image>
-                </a>
-                <a
-                  href="https://personal-trainer-app-iota.vercel.app/"
-                  target="_blank"
-                >
-                  {" "}
-                  <Image src={Site} alt="Site"></Image>
-                </a>
+                  Live Demo
+                  <a
+                    href="https://personal-trainer-app-iota.vercel.app/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <Image src={Site} alt="Site"></Image>
+                  </a>
+                </button>
               </div>
             </div>
           </div>
-          <div className={style.containerLeft}>
+          <div className={style.containerLeft} data-aos="fade-left">
             <div className={style.containerImagem}>
               <a href="https://app-cep-tan.vercel.app/" target="_blank">
                 <Image src={Cep} alt="Cep"></Image>
@@ -106,10 +118,7 @@ export default function Project() {
             <div className={style.containerDescription}>
               <div className={style.containerTitle}>
                 <h1>Buscador de CEP</h1>
-                <p>
-                  Projeto realizado com a finalidade didática, consiste em um
-                  buscador simples que utiliza a API via CEO.
-                </p>
+                <h2>Tecnologias Usadas</h2>
               </div>
               <div className={style.tech}>
                 <Image src={React} alt="Icon-Logo"></Image>
@@ -117,21 +126,27 @@ export default function Project() {
                 <Image src={Sass} alt="Icon-Logo"></Image>
               </div>
               <div className={style.linkSite}>
-                <a
-                  href="https://github.com/GuilhermeLCK/AppCep"
-                  target="_blank"
-                >
+                <button>
+                  Código
+                  <a
+                    href="https://github.com/GuilhermeLCK/AppCep"
+                    target="_blank"
+                  >
+                    <Image src={Git} alt="Icon-Logo"></Image>
+                  </a>
+                </button>
+                <button>
                   {" "}
-                  <Image src={Git} alt="Icon-Logo"></Image>
-                </a>
-                <a href="https://app-cep-tan.vercel.app/" target="_blank">
-                  <Image src={Site} alt="Icon-Logo"></Image>
-                </a>
+                  Live Demo
+                  <a href="https://app-cep-tan.vercel.app/" target="_blank">
+                    <Image src={Site} alt="Icon-Logo"></Image>
+                  </a>
+                </button>
               </div>
             </div>
           </div>
 
-          <div className={style.containerRigth}>
+          <div className={style.containerRigth} data-aos="fade-right">
             <div className={style.containerImagem}>
               <a
                 href="https://guilhermelck.github.io/MeuPortf-lio/"
@@ -142,12 +157,8 @@ export default function Project() {
             </div>
             <div className={style.containerDescription}>
               <div className={style.containerTitle}>
-                <h1>Portfólio pessoal antigo</h1>
-                <p>
-                  Ao longo do meu percurso de estudos, tenho a convicção de que
-                  meu portfólio evoluiu consideravelmente. Com base nas
-                  habilidades e conhecimentos adquiridos até agora.
-                </p>
+                <h1>Portfólio antigo</h1>
+                <h2>Tecnologias Usadas</h2>
               </div>
               <div className={style.tech}>
                 <Image src={Js} alt="Icon-Logo"></Image>
@@ -155,19 +166,25 @@ export default function Project() {
                 <Image src={Sass} alt="Icon-Logo"></Image>
               </div>
               <div className={style.linkSite}>
-                <a
-                  href="https://github.com/GuilhermeLCK/MeuPortf-lio"
-                  target="_blank"
-                >
-                  <Image src={Git} alt="Icon-Logo"></Image>
-                </a>
-                <a
-                  href="https://guilhermelck.github.io/MeuPortf-lio/"
-                  target="_blank"
-                >
-                  {" "}
-                  <Image src={Site} alt="Icon-Logo"></Image>
-                </a>
+                <button>
+                  Código
+                  <a
+                    href="https://github.com/GuilhermeLCK/MeuPortf-lio"
+                    target="_blank"
+                  >
+                    <Image src={Git} alt="Icon-Logo"></Image>
+                  </a>
+                </button>
+                <button>
+                  Live Demo
+                  <a
+                    href="https://guilhermelck.github.io/MeuPortf-lio/"
+                    target="_blank"
+                  >
+                    {" "}
+                    <Image src={Site} alt="Icon-Logo"></Image>
+                  </a>
+                </button>
               </div>
             </div>
           </div>

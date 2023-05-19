@@ -3,6 +3,7 @@ import About from "@/Components/SectionAbout/Index";
 import IamMe from "@/Components/SectionIamMe/Index";
 import Skills from "@/Components/SectionSkills/Index";
 import Project from "@/Components/SectionProject/Index";
+import Footer from "@/Components/SectionFooter/Index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -16,13 +17,11 @@ export default function Home() {
   return (
     <>
       <Header></Header>
-
       <IamMe></IamMe>
-
       <About></About>
-
       <Skills></Skills>
       <Project></Project>
+      <Footer></Footer>
     </>
   );
 }

@@ -46,9 +46,17 @@ export default function Header() {
         <button className={styles.button}>
           <a href="#sobre">Sobre</a>
         </button>
-        <button className={styles.button}>Conhecimento</button>
-        <button className={styles.button}>Projetos</button>
-        <button className={styles.button}>Contato</button>
+        <button className={styles.button}>
+          {" "}
+          <a href="#conhecimento">Conhecimento</a>
+        </button>
+        <button className={styles.button}>
+          {" "}
+          <a href="#projetos">Projetos</a>
+        </button>
+        <button className={styles.button}>
+          <a href="#contatato">Contatos</a>
+        </button>
       </header>
       <div
         className={styles.progressBar}

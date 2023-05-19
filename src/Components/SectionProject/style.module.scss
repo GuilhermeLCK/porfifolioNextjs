@@ -1,16 +1,17 @@
 .section {
-  margin-top: 100px;
-  height: 2500px;
-  width: 100%;
+  height: 2000px;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2px solid #ffff;
+
   .h1 {
-    height: 100px;
+    height: 10%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     margin-bottom: 50px;
 
     h1 {
-      margin-top: 40px;
       color: #ffff;
       font-size: 35px;
       font-family: "Poppins";
@@ -20,18 +21,20 @@
 }
 
 .container {
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  height: 85%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .containerLeft {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
-  height: 20%;
+  width: 70%;
+  height: 25%;
   gap: 20px;
   margin-bottom: 50px;
   border: 2px solid #fff;
@@ -41,101 +44,8 @@
     align-items: center;
     justify-content: flex-end;
     height: 100%;
+    width: 50%;
 
-    width: 30%;
-    img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-    }
-  }
-
-  .containerDescription {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 70%;
-  }
-  .containerTitle {
-    width: 100%;
-    height: 40%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    h1 {
-      color: #ff6464;
-      font-family: "Poppins";
-      margin-bottom: 15px;
-      font-size: 35px;
-      font-weight: 800;
-    }
-
-    p {
-      width: 70%;
-      text-align: center;
-      line-height: 30px;
-      font-size: 18px;
-      font-weight: 500;
-      font-family: "Roboto";
-      color: #fff;
-    }
-  }
-  .tech {
-    width: 100%;
-    height: 20%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-    img {
-      margin: 25px 10px 0 0;
-      height: 30px;
-      width: 30px;
-      object-fit: contain;
-      display: flex;
-      align-items: center;
-    }
-  }
-  .linkSite {
-    width: 100%;
-    height: 20%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    img {
-      margin: 25px 10px 0 0;
-      height: 30px;
-      width: 30px;
-      object-fit: contain;
-      display: flex;
-      align-items: center;
-    }
-  }
-}
-.containerRigth {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 20%;
-  gap: 20px;
-  margin-bottom: 50px;
-  flex-direction: row-reverse;
-  border: 2px solid #fff;
-
-  .containerImagem {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-    width: 30%;
     img {
       display: flex;
       align-items: center;
@@ -146,37 +56,39 @@
       margin: 0 auto;
     }
   }
+
   .containerDescription {
     flex-direction: column;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 70%;
+    height: 90%;
+    width: 50%;
   }
   .containerTitle {
     width: 100%;
-    height: 40%;
+    height: 30%;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     h1 {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 100%;
       color: #ff6464;
       font-family: "Poppins";
-      margin-bottom: 15px;
-      font-size: 35px;
+      margin-bottom: 10px;
+      font-size: 30px;
       font-weight: 800;
     }
+    h2 {
+      color: #cbc6c6;
+      font-family: "Poppins";
 
-    p {
-      width: 70%;
-      text-align: center;
-      line-height: 30px;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 500;
-      font-family: "Roboto";
-      color: #fff;
     }
   }
   .tech {
@@ -187,9 +99,9 @@
     display: flex;
 
     img {
-      margin: 25px 10px 0 0;
-      height: 30px;
-      width: 30px;
+      margin-right: 10px;
+      height: 35px;
+      width: 35px;
       object-fit: contain;
       display: flex;
       align-items: center;
@@ -197,100 +109,239 @@
   }
   .linkSite {
     width: 100%;
-    height: 20%;
+    height: 25%;
     align-items: center;
     justify-content: center;
     display: flex;
+
+    button {
+      width: 150px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: #ff6464;
+      border: none;
+      border-radius: 30px;
+      margin: 0px 10px;
+      color: #fff;
+      font-size: 16px;
+
+      &:hover {
+        border: px solid #fff;
+        transform: scale(1.1);
+        transition: 0.6s;
+      }
+    }
     img {
-      margin: 25px 10px 0 0;
       height: 30px;
       width: 30px;
       object-fit: contain;
       display: flex;
       align-items: center;
+      margin-right: 10px;
+    }
+  }
+}
+.containerRigth {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+  height: 25%;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-direction: row-reverse;
+  border: 2px solid #fff;
+
+  .containerImagem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .containerDescription {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+  }
+  .containerTitle {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      color: #ff6464;
+      font-family: "Poppins";
+      margin-bottom: 10px;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    h2 {
+      color: #cbc6c6;
+      font-family: "Poppins";
+
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+  .tech {
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    img {
+      margin-right: 10px;
+      height: 35px;
+      width: 35px;
+      object-fit: contain;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .linkSite {
+    width: 100%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    button {
+      width: 150px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: #ff6464;
+      border: none;
+      border-radius: 30px;
+      margin: 0px 10px;
+      color: #fff;
+      font-size: 16px;
+
+      &:hover {
+        border: px solid #fff;
+        transform: scale(1.1);
+        transition: 0.6s;
+      }
+    }
+    img {
+      height: 30px;
+      width: 30px;
+      object-fit: contain;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
     }
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .section {
-    height: 3000px;
-    margin-top: 30px;
-  }
-  .containerLeft {
-    flex-direction: column;
-    height: 600px;
-    .containerImagem {
-      justify-content: center;
-      margin: 30px;
-      width: 60%;
-      img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        object-fit: contain;
-      }
-    }
-    .containerDescription {
-      width: 100%;
-    }
-    .containerTitle {
-      height: 50%;
+    height: 3200px;
 
-      h1 {
-        font-size: 25px;
-        text-align: center;
-      }
-
-      p {
-        width: 90%;
-        margin: 0 auto;
-      }
-    }
-    .linkSite {
-      img {
-        margin-bottom: 15px;
-      }
-    }
-    .tech {
-      img {
-        margin: 40px 10px 0 0;
-      }
+    .h1 {
+      height: 5%;
     }
   }
-  .containerRigth {
-    flex-direction: column;
-    height: 600px;
+  .container {
+    height: 90%;
 
-    .containerImagem {
-      justify-content: center;
-      margin: 30px;
-      width: 60%;
-      img {
+    .containerRigth {
+      width: 80%;
+      flex-direction: column;
+      height: 25%;
+      .containerImagem {
         width: 100%;
-        height: 100%;
-        margin: 0 auto;
+        height: 40%;
+        img {
+          width: 65%;
+        }
       }
-    }
-    .containerDescription {
-      width: 100%;
-    }
-    .containerTitle {
-      height: 50%;
+      .containerDescription {
+        height: 60%;
+        width: 100%;
+        h1 {
+          text-align: center;
+          width: 100%;
+          font-size: 25px;
+        }
+        h2 {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+      .linkSite {
+        button {
+          font-size: 14px;
+          margin: 0px 5px;
 
-      h1 {
-        font-size: 25px;
-        text-align: center;
-      }
-
-      p {
-        width: 90%;
-        margin: 0 auto;
+          img {
+            width: 25px;
+            margin-right: 5px;
+          }
+        }
       }
     }
-    .tech {
-      img {
-        margin: 35px 10px 0 0;
+    .containerLeft {
+      width: 80%;
+      flex-direction: column;
+      height: 25%;
+      .containerImagem {
+        width: 100%;
+        height: 40%;
+        img {
+          width: 65%;
+        }
+      }
+      .containerDescription {
+        height: 60%;
+        width: 100%;
+        h1 {
+          text-align: center;
+          width: 100%;
+          font-size: 25px;
+        }
+        h2 {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+      .linkSite {
+        button {
+          font-size: 14px;
+          margin: 0px 5px;
+
+          img {
+            width: 25px;
+            margin-right: 5px;
+          }
+        }
       }
     }
   }
