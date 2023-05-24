@@ -50,7 +50,7 @@ export default function IamMe() {
           <a href="https://www.instagram.com/guilherme.lcs/" target="_blank">
             <Image src={insta} alt="Logo-Insta" className={styles.img}></Image>
           </a>
-          <a href="#" target="_blank">
+          <a href="https://drive.google.com/file/d/1k2ZsdMK9SjH4LefGHW7abhoaA7j0EnDa/view" target="_blank">
             <Image src={pdf} alt="Logo-Insta" className={styles.img}></Image>
           </a>
         </div>
